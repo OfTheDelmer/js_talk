@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="vendor/themes/prism.css">
+  <link rel="stylesheet" href="app/stylesheets/app.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Vast+Shadow' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <body>
+  <div id="impress">
+
+    <div class="step slide container" data-x="-1500" data-y="1500" data-scale="6">
+      <div class="jumbotron">
+        <h1 class="tweek">Advanced JS:</h1>
+      </div>
+    </div>
+
+<!-- -->
+    <div class="step container" data-x="-2500" data-y="1750" data-z="2000" data-scale="1">
+        <h1><small>An Adventure With Build Tools</small></h1>
+    </div><!-- --><div class="step container" data-x="-6000" data-y="1500" data-z="10000" data-rotate-y="-15">
+    <h1>Lets Take A Step Back</h1>
+</div><!-- --><div id="funky" class="step slide container" data-x="-10000" data-y="-1000" data-z="-2500" data-rotate-x="87">
+  <div class="row">
+    <img class="img-responsive" src="app/images/node_install.png">
+  </div>
+</div><!-- --><div class="step slide container" data-x="-8000" data-y="-500" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row"> <h1>Advanced JS: <small>Outline</small></h1></div>
+  <div class="row">
+    <h2>Setup/Background</h2>
+    <ul class="col-xs-offset-1 col-xs-10">
+      <li>(Install Node If It Isn't Already)</li>
+      <li>Intros</li>
+      <li>What is Advanced? </li>
+      <ul>
+        <li>Review Advanced Fundamentals</li>
+      </ul>
+      <li>What Are Build Tools?</li>
+      <li>Why Care About Automation?</li>
+    </ul>
+  </div>
+</div><!-- --><div class="step slide container" data-x="-6000" data-y="0" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row"> <h1>Advanced JS: <small>Outline</small></h1></div>
+  <div class="row">
+    <h2 class="col-xs-12">Package Managment</h2>
+    <ul class="col-xs-offset-1 col-xs-10">
+      <li>NPM/CommonJS Modules</li>
+      <li>BowerJS</li>
+      <li>RequireJS</li>
+      <li>Browserify</li>
+    </ul>
+  </div>
+</div><!-- --><div class="step slide container" data-x="-4000" data-y="500" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row"> <h1>Advanced JS: <small>Outline</small></h1></div>
+  <div class="row">
+    <h2 class="col-xs-12">Build Tools Managment</h2>
+    <ul class="col-xs-offset-1 col-xs-10">
+      <li>Grunt</li>
+      <li>Gulp</li>
+    </ul>
+    <h2>Productivity</h2>
+    <ul>
+      <li>Yeoman Generators</li>
+    </ul>
+  </div>
+</div><!-- --><div class="step slide container" data-x="-4000" data-y="500" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row"> <h1>Advanced JS: <small>Outline</small></h1></div>
+  <div class="row">
+    <h2 class="col-xs-12">Larger Application: Blog App</h2>
+    <ul class="col-xs-offset-1 col-xs-10">
+      <li>Express</li>
+      <li>Postgres</li>
+      <li>Sequelize || Bookshelf</li>
+      <li>Angular</li>
+    </ul>
+  </div>
+</div><!-- --><div class="step slide container" data-x="-2000" data-y="1000" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row"> <h1>Advanced JS: <small>Intros</small></h1></div>
+  <div class="row">
+    <h2 class="col-xs-12">Answer The following:</h2>
+    <ul class="col-xs-offset-1 col-xs-5">
+      <li>What is your name?</li>
+      <li>What is your familiarity with the topics?</li>
+      <li>What do you hope to learn about?</li>
+      <li> <it><a href="https://docs.google.com/a/generalassemb.ly/forms/d/1GI3W_nnTzYSpqh-SyRUFJP_4WlYdAgPP-bHbZbrGOck/viewform">Submit A Survey</a></it></li>
+    </ul>
+    <div class="col-xs-6">
+      <img class="img-responsive" src="app/images/entrance_survey.png">
+    </div>
+  </div>
+</div><!-- --><div class="step slide container" data-x="0" data-y="1500" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row"> <h1>Advanced JS: <small>What is Advanced?</small></h1></div>
+  <div class="row">
+    <div class="col-xs-12"> 
+      <h2 ><a href="http://afabbro.github.io/jsconf2013/"> Angelina Fabbro: JS Conf 2013</a></h2>
+      <h3>Clues You're Not A Beginner</h3>
+    </div>
+    <div class="col-xs-8">
+      <ul>
+        <li><i><a href='http://afabbro.github.io/jsconf2013/#29'>"YOU CAN USE THE FUNDAMENTALS IN ANY LANGUAGE"</a></i>
+        </li>
+        <li>
+          <i><a href='http://afabbro.github.io/jsconf2013/#30'>"YOU ARE COMFORTABLE WRITING CODE FROM SCRATCH"</a></i>
+        </li>
+        <li>
+          <i><a href='http://afabbro.github.io/jsconf2013/#31'>"YOU PEEK INSIDE THE LIBS YOU USE"</a></i>
+        </li>
+        <li>
+          <i><a href='http://afabbro.github.io/jsconf2013/#31'>"YOU FEEL LIKE YOUR CODE IS MEDIOCRE / but / YOU DON'T KNOW WHAT TO DO ABOUT IT"</a></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="2000" data-y="2000" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>What is Advanced?</small></h1></div>
+  <div class="row">
+    <h2>Fabbro Continued:</h2>
+    <h3>Clues You're Not Quite An Expert</h3>
+    <div class="col-xs-6">
+      <ul>
+        <li><a href="http://afabbro.github.io/jsconf2013/#34">"YOU DON'T QUITE GROK ALL THE CODE YOU READ
+/ <i>even when it has comments</i>"</a>
+        </li>
+        <li><a href="http://afabbro.github.io/jsconf2013/#35">"YOU CAN'T EXPLAIN WHAT YOU KNOW"</a>
+        </li>
+        <li><a href="http://afabbro.github.io/jsconf2013/#36">"YOU AREN'T CONFIDENT DEBUGGING"</a>
+        </li>
+        <li><a href="http://afabbro.github.io/jsconf2013/#37">"YOU RELY ON REFERENCES WAY TOO MUCH"</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="4000" data-y="2500" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>What is Advanced?</small></h1></div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Fabbro Continued:</h2>
+      <h3>Ways To Grow!</h3>
+    </div>
+    <div class="col-xs-8">
+      <ul>
+        <li>"ASK WHY OBSESSIVELY / <i>short of existential angst</i>"
+        </li>
+        <li>"TEACH AND/OR SPEAK AT AN EVENT"
+        </li>
+        <li>WORK THROUGH A SUGGESTED CURRICULUM (BOOKS)
+        </li>
+        <li>EXPERIMENT RECKLESSLY (THE CODE DOESN'T CARE)
+        </li>
+        <li>HAVE OPINIONS
+        </li>
+        <li>SEEK MENTORSHIP
+        </li>
+        <li>PROGRAM A LOT
+        </li>
+        <li>STOP FUCKING PROGRAMMING SOMETIMES
+        </li>
+        <li>WRITE JAVASCRIPT A LOT
+        </li>
+        <li>WRITE IN ANOTHER LANGUAGE FOR A WHILE
+        </li>
+        ....
+      </ul>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="6000" data-y="2500" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Functions First</h2>
+      <ul>
+        <li><mark>Lexical Scoping</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/lexical_scope.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="8000" data-y="3000" data-z="-2500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Functions First</h2>
+      <ul>
+        <li>Lexical Scoping</li>
+        <li><mark>Lexical Closure</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/lexical_closure.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step container"  data-x="10000" data-y="-1000" data-z="-3000" data-rotate-x="87" data-rotate-y="45">
+
+  <div class="row">
+    <h2>Context Switching!</h2>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="8000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Functions First</h2>
+      <ul>
+        <li>Lexical Scoping</li>
+        <li>Lexical Closure</li>
+        <li><mark>Apply/Call</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/call_apply.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="10000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Functions First</h2>
+      <ul>
+        <li>Lexical Scoping</li>
+        <li>Lexical Closure</li>
+        <li><mark>Apply/Call</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/call_apply_2.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="12000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Functions First</h2>
+      <ul>
+        <li>Lexical Scoping</li>
+        <li>Lexical Closure</li>
+        <li>Apply/Call</li>
+        <li><mark>Bind</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/bind.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="14000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Functions First</h2>
+      <ul>
+        <li>Lexical Scoping</li>
+        <li>Lexical Closure</li>
+        <li>Apply/Call</li>
+        <li>Bind</li>
+        <li><mark>First Class</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/first_class.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="16000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Functions First</h2>
+      <ul>
+        <li>Lexical Scoping</li>
+        <li>Lexical Closure</li>
+        <li>Apply/Call</li>
+        <li>Bind</li>
+        <li>First Class</li>
+        <li><mark>Higher Order Function</mark></li>
+        <ul> 
+            <li> Takes in one or more functions as input </li>
+            <i>or</i>            
+            <li> returns a function</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/higher_order_function.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="18000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Objects</h2>
+      <ul>
+        <li><mark>Methods</mark></li>
+        <ul>
+          <li> Functions that operate with the context of their objects </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/methods.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="20000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Objects</h2>
+      <ul>
+        <li>Methods</li>
+        <li><mark>Constructors</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/constructors.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="22000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Objects</h2>
+      <ul>
+        <li>Methods</li>
+        <li>Constructors</li>
+        <li><mark>Prototypes</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/prototypes.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="24000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Objects</h2>
+      <ul>
+        <li>Methods</li>
+        <li>Constructors</li>
+        <li><mark>Prototypes</mark></li>
+        <ul>
+          <li>The constructor is a good place to do setup
+          </li>
+          <li>The constructor is not a good place to add methods
+          </li>
+          <li>Methods added in the constructor are created each time <code>new</code> is called</li>
+          <li>Methods added in the constructor will have a copy of all the variables in scope</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <pre data-src="examples/prototypes.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="24000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <h1>Advanced JS: <small>Review Advanced Fundamentals?</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <h2>Objects</h2>
+      <ul>
+        <li>Methods</li>
+        <li>Constructors</li>
+        <li>Prototypes</li>
+        <li><mark>Klassical Inheritance</mark></li>
+      </ul>
+    </div>
+    <div class="col-sm-5">
+      <pre data-src="examples/klassical_inheritance_1.js"></pre>
+    </div>
+    <div class="col-sm-4">
+      <pre data-src="examples/klassical_inheritance_2.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="26000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <div class="col-xs-12">
+      <h1>Advanced JS: <small>What Are Build Tools?</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <ul>
+        <li>GNU Make <img class="img-responsive" height="50" src="http://www.gnu.org/graphics/heckert_gnu.small.png">
+        </li>
+        <ul>
+          <li>Originally made useful for compiling and working with C code</li>
+        </ul>
+        <li>Other languages have their own tools</li>
+        <ul>
+          <li>Ruby has <i>rake</i></li>
+          <li>Coffeescript has <i>cake</i></li>
+          <li><a href="https://github.com/jashkenas/coffee-script/wiki/List-of-languages-that-compile-to-JS">More?</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="26000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <div class="col-xs-12">
+      <h1>Advanced JS: <small>Why care about automation?</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-offset-4 col-xs-4">
+      <div>Beyond just saving your project from a catstrophic meltdown, it might also save you time, especially during a meltdown.</div>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="26000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <div class="col-xs-12">
+      <h1>Advanced JS: <small>Package Management</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>NPM/CommonJS Modules</h2>
+      <div>
+        <img src="https://www.npmjs.org/static/img/npm.png" height="50"> <br>
+         <code>npm run</code>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <ul>
+        <li>
+          Comes with NPM and uses what you have installed
+        </li>
+        <li>
+          Just setup your <code>package.json</code>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="26000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <div class="col-xs-12">
+      <h1>Advanced JS: <small>Package Management</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+    <div class="col-xs-12">
+      <h2>NPM/CommonJS Modules</h2>
+      <div>
+        <img src="https://www.npmjs.org/static/img/npm.png" height="50"> <br>
+         <code>npm run</code>
+      </div>
+    </div>    
+    <div class="row">
+    <div class="col-xs-12">
+      <ul>
+        <li>Lets create a JS linting task</li>
+        <li>run <code>$ npm init</code> in terminal to start a new package.json</li>
+        <li><code>npm install jshint --save-dev</code></li>
+        <li>Add Something like to the right under scripts</li>
+        <li><code>npm run lint</code></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+      <div class="col-xs-6">
+      <pre data-src="examples/package.js"></pre>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="28000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <div class="col-xs-12">
+      <h1>Advanced JS: <small>Package Management</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>NPM/CommonJS Modules</h2>
+      <div>
+        <img src="https://www.npmjs.org/static/img/npm.png" height="50"> <br>
+         <code>npm run</code>
+      </div>
+    </div>    
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li>Protip: Also helps us find out which commands we can call</li>
+          <li><code>npm completion</code> returns a script for us</li>
+          <li><code>npm completion >> ~/.bash_profile</code></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="30000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <div class="col-xs-12">
+      <h1>Advanced JS: <small>Package Management</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>BowerJS</h2>
+      <div>
+        <img src="https://pbs.twimg.com/profile_images/3536632979/66db62603f426a8fc6664081811be6d4_bigger.png" height="50"> <br>
+         <code>Bower install</code>
+      </div>
+    </div>    
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li>Helps us manage package on the front-end</li>
+          <ul>
+            <li>Bootstrap</li>
+            <li>Foundation</li>
+            <li>D3</li>
+            <li>Angular</li>
+            <li>et cetera</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="32000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <div class="col-xs-12">
+      <h1>Advanced JS: <small>Package Management</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>RequireJS<img src="http://bran.name/dump/requirejs-logo.svg" height="50"></h2>
+    </div>    
+    <div class="row">
+      <div class="col-xs-11">
+        <ul>
+          <li>Helps us link together and load packages on the front-end</li>
+          <ul>
+            <li><code>bower install requirejs</code></li>
+            <li>Add the header in your html
+              <pre data-src="examples/require_header.html"></pre>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><!-- --><div class="step slide container"  data-x="34000" data-y="3000" data-z="-1500" data-rotate-x="87">
+  <div class="page-header row">
+    <div class="col-xs-12">
+      <h1>Advanced JS: <small>Package Management</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>RequireJS<img src="http://bran.name/dump/requirejs-logo.svg" height="50"></h2>
+    </div>    
+    <div class="row">
+      <div class="col-xs-11">
+        <ul>
+          <li>
+              Using <code>define</code> and <code>require</code> have some gotchas
+          </li>
+          <li>
+              <a href="http://requirejs.org/docs/api.html">Check out the sweet docs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>  </div>
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-1">
+          <button id="options" class="btn btn-cust">Options</button>
+        </div>
+        <div class="col-xs-6">
+          <div id="themeCon" class="container hidden">
+          </div>
+        </div>
+     </div>
+    </div>
+  </div>
+</body>
+  <script src="app/javascripts/index.js"></script>
+</html>

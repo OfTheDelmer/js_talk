@@ -1,0 +1,72 @@
+html body {
+background: rgb(215, 215, 215);
+  padding-bottom: 10px;
+}
+#impress {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+html .page-header, .header {
+  text-transform: uppercase;
+  background-color: #f1c40f;
+  padding: 10px;
+  font-family: 'Lobster', cursive;
+  color: #2c3e50;
+  font-size: x-large;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+
+html h1 small {
+  text-transform: uppercase;
+  background-color: #f1c40f;
+  padding: 10px;
+  font-family: 'Lobster', cursive;
+  color: #2c3e50;
+  font-size: x-large;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.slide {
+  min-height: 500px;
+  max-height: 500px;
+  overflow-y: scroll;
+  width: 500px;
+  background-color: #2c3e50;
+  color: white;
+  font-size: large;
+}
+
+#theme > input {
+  position:absolute;
+  clip: rect(0,0,0,0);
+}
+
+#theme > label {
+  padding: 20px;
+}
+
+#theme > p {
+  font-size: large;
+}
+
+.slide .jumbotron {
+  font-family: 'Lobster', cursive;
+  background-color: #f1c40f;
+  font-size: large;
+  margin-top: 150px;
+}
+body div.navbar-fixed-bottom {
+  background: none;
+}
+
+
+

@@ -1,0 +1,21 @@
+{
+  "name": "presentation-tools",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Curriculum-Resources/SF-14-Class-10-Notes",
+  "authors": [
+    "None"
+  ],
+  "description": "A presentation setup",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
